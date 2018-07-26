@@ -18,10 +18,10 @@ System.setProperty("webdriver.chrome.driver", "/home/ubuntu/chromedriver");
               //  Thread.sleep(1000);
 
                 if (driver.getPageSource().contains("ac:00:00:01")) {
-                        System.out.println("Pass");
+                        System.out.println("Output Received on Deployed Application : SUCCESS");
 //System.out.println(driver.getPageSource());
 String yourtext= driver.findElement(By.tagName("body")).getText() ;
-System.out.println(yourtext);
+System.out.println("OUTPUT : "+yourtext);
                 } else {
                         System.out.println("Fail");
 System.out.println(driver.getPageSource());
